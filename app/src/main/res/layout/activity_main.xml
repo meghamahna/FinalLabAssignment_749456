@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_restaurant"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="0.5dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:onClick="btnClick"
+            android:text="Restaurant"
+            android:drawableRight="@drawable/baseline_local_dining_black_18dp"
+            android:textColor="#000"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="pharmacy"
+            android:drawableRight="@drawable/baseline_local_hospital_black_18dp"
+            android:layout_marginLeft="0.5dp"
+            android:id="@+id/btn_pharmacy"
+            android:onClick="btnClick"
+            android:background="#fff"
+            android:textColor="#000"/>
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Library"
+            android:drawableRight="@drawable/baseline_local_library_black_18dp"
+            android:layout_marginLeft="0.5dp"
+            android:id="@+id/btn_library"
+            android:onClick="btnClick"
+            android:background="#fff"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="600dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveButton"
+        android:text="Save"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Direction"
+            android:drawableRight="@drawable/baseline_near_me_black_18dp"
+            android:layout_marginLeft="0.5dp"
+            android:id="@+id/btn_direction"
+            android:onClick="btnClick"
+            android:background="#fff"
+            android:textColor="#000"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Distance"
+            android:drawableRight="@drawable/baseline_map_black_18dp"
+            android:layout_marginLeft="0.5dp"
+            android:id="@+id/btn_distance"
+            android:onClick="btnClick"
+            android:background="#fff"
+            android:textColor="#000"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Favourites"
+            android:drawableRight="@drawable/baseline_star_black_18dp"
+            android:layout_marginLeft="0.5dp"
+            android:id="@+id/btn_favourite"
+            android:onClick="btnClick"
+            android:background="#fff"
+            android:textColor="#000"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Clear"
+            android:layout_marginLeft="0.5dp"
+            android:id="@+id/btn_clear"
+            android:onClick="btnClick"
+            android:background="#fff"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FinalLabAssignment</string>
+    <string name="api_key">API_KEY</string>
+    <string name="api_key_places">API_KEY</string>
+
+    <array name="views">
+        <item>normal</item>
+        <item>satellite</item>
+        <item>terrain</item>
+    </array>
+</resources>
